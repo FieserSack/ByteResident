@@ -14,6 +14,7 @@ Anleitung zum Pflegen der Projekt-Dokumentation in `docs/`.
 | Situation | Ziel-Datei |
 |-----------|------------|
 | Projektziel oder Features ändern | `docs/planning/vision.md` |
+| Feature für später beschreiben | `docs/planning/upcoming-features.md` |
 | Meilenstein erreicht oder verschoben | `docs/planning/roadmap.md` |
 | Neue Anforderung | `docs/planning/requirements.md` |
 | Architekturentscheidung | `docs/adr/NNNN-titel.md` |

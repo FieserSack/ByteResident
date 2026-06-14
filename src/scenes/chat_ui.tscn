@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://byte_chat_ui"]
+
+[ext_resource type="Script" path="res://ui/chat_panel.gd" id="1_chat"]
+
+[node name="ChatUI" type="CanvasLayer"]
+script = ExtResource("1_chat")
+
+[node name="Panel" type="PanelContainer" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -220.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="History" type="RichTextLabel" parent="Panel/VBox"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+scroll_following = true
+text = "[i]Sag Hallo zu deinem neuen Bewohner…[/i]"
+
+[node name="InputRow" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Input" type="LineEdit" parent="Panel/VBox/InputRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Nachricht eingeben…"
+
+[node name="Send" type="Button" parent="Panel/VBox/InputRow"]
+layout_mode = 2
+text = "Senden"

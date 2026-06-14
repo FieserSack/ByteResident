@@ -54,6 +54,10 @@ docs/adr/NNNN-kurzer-titel.md
 | Nr. | Thema |
 |-----|-------|
 | 0002 | Spielname „Byte Resident“ (erledigt) |
-| 0003 | Tech-Stack / Spielengine |
-| 0004 | Architektur-Stil (ECS, OOP, …) |
-| 0005 | Persistenz-Format |
+| 0003 | Spieler-Interaktionsmodell (erledigt) |
+| 0004 | Tech-Stack Godot 4.6, Windows-first (erledigt) |
+| 0005 | Dialog-System / lokales LLM (erledigt, Ziel für KI-Plugin) |
+| 0006 | Besuchs-System (vorgeschlagen) |
+| 0007 | Scripted Dialog + KI-Plugin (erledigt) |
+| 0008 | Persistenz JSON (erledigt) |
+| 0009 | Scripted Dialog Hybrid (erledigt) |

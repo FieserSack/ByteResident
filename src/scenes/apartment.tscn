@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://byte_apartment"]
+
+[ext_resource type="Script" path="res://world/apartment.gd" id="1_apartment"]
+[ext_resource type="Script" path="res://agents/resident.gd" id="2_resident"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(800, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_resident"]
+size = Vector2(24, 40)
+
+[node name="Apartment" type="Node2D"]
+script = ExtResource("1_apartment")
+
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(640, 520)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="FloorVisual" type="ColorRect" parent="Floor"]
+offset_left = -400.0
+offset_top = -16.0
+offset_right = 400.0
+offset_bottom = 16.0
+color = Color(0.35, 0.28, 0.22, 1)
+
+[node name="BackWall" type="ColorRect" parent="."]
+offset_left = 240.0
+offset_top = 120.0
+offset_right = 1040.0
+offset_bottom = 520.0
+color = Color(0.55, 0.48, 0.42, 1)
+
+[node name="Resident" type="CharacterBody2D" parent="."]
+position = Vector2(400, 488)
+script = ExtResource("2_resident")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Resident"]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_resident")
+
+[node name="Sprite" type="ColorRect" parent="Resident"]
+offset_left = -12.0
+offset_top = -40.0
+offset_right = 12.0
+offset_bottom = 0.0
+color = Color(0.91, 0.77, 0.63, 1)

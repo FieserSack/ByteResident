@@ -1,12 +1,13 @@
 # Erste Schritte
 
-Willkommen bei **Byte Resident – Dein kleiner Untermieter im PC**! Dieses Projekt befindet sich in der **Planungsphase**.
+Willkommen bei **Byte Resident – Dein kleiner Untermieter im PC**!
 
 ## Voraussetzungen
 
 - Git
+- [Godot 4.6](https://godotengine.org/download) (Client unter `src/`)
 - Cursor IDE (empfohlen für KI-gestützte Entwicklung)
-- Tech-Stack-Tools: **noch offen** – werden nach ADR-Entscheidung ergänzt
+- Windows (Zielplattform für Phase 1)
 
 ## Repository klonen
 
@@ -14,6 +15,14 @@ Willkommen bei **Byte Resident – Dein kleiner Untermieter im PC**! Dieses Proj
 git clone <repository-url> ByteResident
 cd ByteResident
 ```
+
+## Godot-Projekt starten
+
+1. Godot Engine öffnen
+2. **Import** → Ordner `src/` wählen (`project.godot`)
+3. **Run** (F5)
+
+Details: [src/README.md](../../src/README.md). Tech-Stack: [ADR 0004](../adr/0004-tech-stack-godot-windows.md).
 
 ## Projekt verstehen (empfohlene Lesereihenfolge)
 
@@ -28,7 +37,7 @@ cd ByteResident
 | Ordner | Zweck |
 |--------|-------|
 | `docs/` | Alle Dokumentation, Pläne, Checklisten |
-| `src/` | Anwendungscode (noch leer) |
+| `src/` | Godot-4-Projekt (Anwendungscode) |
 | `assets/` | Grafiken, Audio, Sprites |
 | `scripts/` | Hilfsskripte |
 | `.cursor/` | KI-Konfiguration (Rules, Skills, Hooks) |
@@ -46,9 +55,3 @@ Kurzfassung:
 ## Beitragen
 
 Lies [CONTRIBUTING.md](../../CONTRIBUTING.md) bevor du einen Pull Request erstellst.
-
-## Nächste Schritte für das Team
-
-- [ ] Tech-Stack entscheiden (ADR schreiben)
-- [ ] Entwicklungsumgebung dokumentieren
-- [ ] Ersten Prototyp-Meilenstein starten
