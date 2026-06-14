@@ -1,0 +1,37 @@
+# Betriebssystem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Umgebungsvariablen & Secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# Cursor (lokal, nicht projektweit)
+.cursor/plans/
+
+# Build-Artefakte (vorbereitet für späteren Tech-Stack)
+node_modules/
+dist/
+build/
+out/
+target/
+*.egg-info/
+__pycache__/
+*.pyc
+.cache/
+
+# Logs
+*.log
+logs/
+
+# Temporäre Dateien
+tmp/
+temp/

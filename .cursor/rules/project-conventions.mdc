@@ -1,0 +1,34 @@
+---
+description: Projektweite Konventionen für Byte Resident
+alwaysApply: true
+---
+
+# Projekt-Konventionen
+
+## Sprache
+
+- Dokumentation und Kommunikation mit dem Nutzer: **Deutsch**
+- Code-Identifikatoren (Variablen, Funktionen, Klassen): Englisch
+
+## Dokumentation
+
+- Planungsartefakte gehören in `docs/`, nicht in den Projekt-Root
+- Architekturentscheidungen als ADR in `docs/adr/` (Format: `NNNN-kurzer-titel.md`)
+- Bei Architekturänderungen: ADR schreiben, bevor Code gemergt wird
+
+## Code
+
+- Bestehende Konventionen im Codebase beachten
+- Minimaler Scope: nur das ändern, was für die Aufgabe nötig ist
+- Keine Secrets in Code oder Commits
+
+## Qualität
+
+- Features erfüllen [Definition of Done](docs/checklists/definition-of-done.md)
+- Vor Release: [Release-Checkliste](docs/checklists/release.md) durchgehen
+
+## KI-Workflow
+
+- Rules: `.cursor/rules/`
+- Skills: `.cursor/skills/`
+- Zentrale Agent-Anweisungen: `AGENTS.md`
